@@ -38,7 +38,7 @@ Do not filter text in real-time when users type on the client, such as entering 
 ```lua
 local TextService = game:GetService("TextService")
 
-local filteredText = ""
+local filteredTextResult = nil
 local success, errorMessage = pcall(function()
 	filteredTextResult = TextService:FilterStringAsync(text, fromPlayerId)
 end)
